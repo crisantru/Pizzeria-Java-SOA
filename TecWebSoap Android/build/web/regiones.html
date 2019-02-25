@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Administración de Países</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/regions.js"></script>
+        <script>
+            getTabla();
+        </script>
+    </head>
+    <body>
+        <form id="form1" name="form1" method="post">   
+            <table>
+                <tr>
+                    <td>ID:</td><td><input type="text" id="idRegion" name="idRegion" /></td>
+                </tr>
+                <tr>
+                    <td>Nombre:</td><td><input type="text" id="regionName" name="regionName" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="reset" id="btnLimpiar" name="btnLimpiar" value="Limpiar">Limpiar</button>
+                        <button type="button" id="btnBuscar" name="btnBuscar" onclick="buscar()" value="Buscar">Buscar</button>
+                        <button type="button" id="btnGuardar" name="btnGuardar" onclick="" value="Guardar">Guardar</button>
+                        <button type="button" id="btnBorrar" name="btnBorrar" onclick="" value="Borrar">Borrar</button>
+                    </td>
+                </tr>
+            </table>        
+        </form>
+        <table id="myTable" border="1" cellpadding="3" >
+            <tbody></tbody>
+        </table>
+    </body>
+</html>
